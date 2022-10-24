@@ -5,6 +5,10 @@ set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++11 -march=native")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -fPIC -fopenmp")
 
+set("OpenCV_DIR" "/home/hao/Lib_Install/opencv-3.4.3/build")
+set(cv_bridge_DIR /home/hao/A-workspace/opencv3.4/cv_bridge_ws/devel/share/cv_bridge/cmake)
+
+
 find_package(catkin REQUIRED COMPONENTS
     roscpp
     std_msgs
