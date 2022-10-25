@@ -1,3 +1,17 @@
+# fix
+1. Chessborad.cc line 28, 
+    ```C++
+    //from 
+    cv::cvtColor( image, mImage, cv::COLOR_GRAY2BGR );
+    //to
+    cv::cvtColor( image, mImage, CV_BGR2GRAY );
+
+    ```
+2. include/camera_model/apriltag_frontend/GridCalibrationTargetBase.hpp line 4 
+   ```c++
+    #include <iostream>
+   ```
+
 
 
 #Main version:
